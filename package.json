@@ -10,7 +10,11 @@
     "start": "node build/server.js",
     "start:dev": "tsx watch src/server.ts",
     "build": "tsup src --out-dir build",
-    "lint": "npx eslint src --ext .ts --fix"
+    "lint": "npx eslint src --ext .ts --fix",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +25,7 @@
     "bcryptjs": "3.0.2",
     "dotenv": "16.4.7",
     "fastify": "5.2.1",
+    "vite-tsconfig-paths": "5.1.4",
     "zod": "3.24.2"
   },
   "devDependencies": {
@@ -29,6 +34,8 @@
     "@types/node": "22.13.10",
     "@typescript-eslint/eslint-plugin": "8.26.1",
     "@typescript-eslint/parser": "8.26.1",
+    "@vitest/coverage-v8": "3.0.8",
+    "@vitest/ui": "3.0.8",
     "eslint": "9.22.0",
     "eslint-config-prettier": "10.1.1",
     "eslint-plugin-prettier": "5.2.3",
@@ -38,6 +45,7 @@
     "tsup": "8.4.0",
     "tsx": "4.19.3",
     "typescript": "5.8.2",
-    "typescript-eslint": "8.26.1"
+    "typescript-eslint": "8.26.1",
+    "vitest": "3.0.8"
   }
 }
