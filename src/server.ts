@@ -7,6 +7,6 @@ app.listen(
     port: env.PORT,
   },
   () => {
-    console.log('listening on port ');
+    console.log('Server is Running!!');
   },
 );
