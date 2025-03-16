@@ -35,7 +35,6 @@ describe('Create Gym Use Case', () => {
     });
 
     expect(gyms).toHaveLength(1);
-
     expect(gyms).toEqual([
       expect.objectContaining({ title: 'Javascript Gym' }),
     ]);
