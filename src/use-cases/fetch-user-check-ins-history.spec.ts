@@ -27,7 +27,6 @@ describe('Fetch User Check-in History Use Case', () => {
 
     const { checkIns } = await sut.execute({
       userId: 'user-01',
-
       page: 1,
     });
 
