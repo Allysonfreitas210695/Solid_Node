@@ -1,5 +1,6 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
+
 import { makeCheckInUseCase } from '@/use-cases/factories/make-check-in-use.case';
 
 export async function create(request: FastifyRequest, reply: FastifyReply) {
